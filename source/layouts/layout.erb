@@ -9,9 +9,11 @@
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+    <%= image_tag "favicon.png" %>
   </head>
   <body>
+    <%= partial "layouts/navbar" %>
     <%= yield %>
+    <%= partial "layouts/footer" %>
   </body>
 </html>
